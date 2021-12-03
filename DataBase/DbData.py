@@ -7,7 +7,7 @@ CREATE_DB - запрос на создание БД при первом запу
 
 PATH = "DataBase\\eToken.db"
 
-CREATE_DB = f"""
+SQL_CREATE_DB = f"""
             CREATE TABLE IF NOT EXISTS jrn (
             id_record INTEGER PRIMARY KEY AUTOINCREMENT not null,
             sn CHAR,
@@ -34,3 +34,4 @@ CREATE_DB = f"""
             adm_fio char
             adm_dolg char );
             """
+SQL_Find_Token = "SELECT * from jrn where jrn.sn = ?"

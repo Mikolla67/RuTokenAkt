@@ -10,5 +10,6 @@ while True:
         s_eToken_SN = s_eToken.survey_eToken(elib)
         if s_RuToken_SN != '000000':
             print(f"RuToken: ",s_RuToken_SN)
+
         if s_eToken_SN != '000000':
             print(f"eToken: ",s_eToken_SN)
