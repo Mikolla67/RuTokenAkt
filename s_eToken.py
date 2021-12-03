@@ -23,12 +23,12 @@ def survey_eToken(libid):
             lab = v[1].strip()
             infotok = v[3]
             slotid = v[0]
-#            print("Слот № "+ str(v[0]))
-#            print("Метка токена в слоте: "+ v[1])
-#            print("Инфа: " + infotok[0])
-#            print("Инфа1: " + infotok[1])
-#            print("Инфа2: " + infotok[2])
-#             print("Инфа3: " + infotok[3])
+            # print("Слот № "+ str(v[0]))
+            # print("Метка токена в слоте: "+ v[1])
+            # print("Инфа: " + infotok[0])
+            # print("Инфа1: " + infotok[1])
+            # print("Инфа2: " + infotok[2])
+            # print("Инфа3: " + infotok[3])
             ser_num = infotok[3]
             break
     return(ser_num)
