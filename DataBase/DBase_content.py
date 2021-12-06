@@ -15,7 +15,6 @@ class DBContext:
             result_query = ['Нет такого токена, надо писать !']
         else:
             result_query = ['А уже есть такой номер - ',sn]
-#            result_query = self.cursor.execute(SQL_FIND_TOKEN_ALL, id).fetchall()
         return result_query
 
     def add_rec(self, addList):
