@@ -5,7 +5,7 @@ import datetime
 app = FastAPI(title="Comon everybody !")
 db = DBContext()
 
-#Ищем в базе токен с указанным номером (точно)
+#Ищем в базе токен с указанным номером (очень точно)
 @app.get("/findtoken")
 async def get_find_token(sn: str):
     returnlst = db.find_token(sn)
