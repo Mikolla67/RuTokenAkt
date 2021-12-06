@@ -5,7 +5,7 @@ app = FastAPI(title="Ну что, ёпта?!")
 db = DBContext()
 
 @app.get("/findtoken")
-async def get_find_token(substring: str):
+async def get_find_token(sn_string: str):
 #Ищем в базе токен с указанным номером
-    returnlst = db.FIND_TOKEN(substring)
+    returnlst = db.find_token(sn_string)
     return returnlst

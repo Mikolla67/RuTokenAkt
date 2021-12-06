@@ -9,6 +9,6 @@ class DBContext:
         self.cursor.executescript(SQL_CREATE_DB)
         self.conn.commit()
 
-    def FIND_TOKEN(self, ser_num):
-        result_query = self.cursor.execute(SQL_Find_Token, ser_num)
+    def find_token(self, sn_string):
+        result_query = self.cursor.execute(SQL_FIND_TOKEN, [sn_string]).fetchall()
         return (result_query)
