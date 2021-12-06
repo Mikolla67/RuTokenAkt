@@ -34,6 +34,6 @@ SQL_CREATE_DB = f"""
             adm_fio char
             adm_dolg char );
             """
-SQL_FIND_TOKEN = f"""SELECT * FROM jrn where sn = ?"""
+SQL_FIND_TOKEN = f"""SELECT id_record FROM jrn where sn = ? """
 
-SQL_INSERT_REC = f"""INSERT into jrn (sn, date_reg, type_device, id_adm) values("1234","11.11.2021","1","1")"""
+SQL_INSERT_REC = f"""INSERT into jrn (sn, date_reg, type_device, id_adm) values(?, ?, ? ,?)"""
